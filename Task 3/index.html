@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Issue Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Issue Tracker</h1>
+  </header>
+
+  <main>
+    <section id="issue-list">
+      <!-- Display issues here -->
+    </section>
+
+    <section id="issue-form">
+      <h2>Create/Update Issue</h2>
+      <form id="issueForm">
+        <label for="issueTitle">Issue Title:</label>
+        <input type="text" id="issueTitle" required>
+
+        <label for="issueDescription">Description:</label>
+        <textarea id="issueDescription" rows="4" required></textarea>
+
+        <label for="priority">Priority:</label>
+        <select id="priority" required>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+
+        <label for="assignedTo">Assigned To:</label>
+        <input type="text" id="assignedTo" required>
+
+        <label for="attachment">Attachment:</label>
+        <input type="file" id="attachment">
+
+        <button type="submit">Save Issue</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
